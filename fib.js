@@ -2,10 +2,10 @@ var cash = [0, 1, 1];
 var g = prompt('Введите по какое число вам нужно вывести ряд Фиббоначчи');
 
 
-function fibo(n, deep = 0) {
+function fibo(n) {
 
     if (cash[n] === undefined) {
-        cash[n] = fibo(n - 1, deep + 1) + fibo(n - 2, deep + 1);
+        cash[n] = fibo(n - 1) + fibo(n - 2);
         console.log(cash);
     }
 
