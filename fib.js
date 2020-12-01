@@ -1,4 +1,6 @@
 var cash = [0, 1, 1];
+var g = prompt('Введите по какое число вам нужно вывести ряд Фиббоначчи');
+
 
 function fibo(n, deep = 0) {
 
@@ -10,8 +12,8 @@ function fibo(n, deep = 0) {
     return cash[n];
 }
 
-var f = fibo(100);
+var f = fibo(g);
 
 for (var j = 1; j < cash.length; j++) {
-    document.write(`${j}: ${cash[j]}<br />`);
+    document.write(`<p style="font-size:18pt;">${j}: ${cash[j]}</p>`);
 }
